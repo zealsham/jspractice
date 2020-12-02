@@ -17,6 +17,10 @@ function inputHanlder(){
 }
 
 function converter(kelvinDegree){
+    if(typeof kelvinDegree=='undefined'){
+        console.log("you don't adhere to instruction do you?")
+        return
+    }
     console.log(`${kelvinDegree} kelvin is the same as ${kelvinDegree-273} celcisus`)
 }
 
