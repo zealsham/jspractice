@@ -3,15 +3,6 @@
 //i try to make my solution as input proof as i can .
 const prompt = require('prompt-sync')()
 
-let programAnswers=['It is certain',
-'Without a doubt',
-'Most likely',
-'Yes',
-'Reply hazy try again',
-'Ask again later',
-'My reply is no',
-'No',
-'Very doubtful',]
 
 
 function InputHandler(){
@@ -25,6 +16,16 @@ function InputHandler(){
 }
 
 function answerGenerator(question){
+let programAnswers=['It is certain',
+'Without a doubt',
+'Most likely',
+'Yes',
+'Reply hazy try again',
+'Ask again later',
+'My reply is no',
+'No',
+'Very doubtful',]
+
     if(typeof question=='undefined'){
         console.log("you no dey hear word.")
         return
