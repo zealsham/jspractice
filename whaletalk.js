@@ -18,7 +18,7 @@ const sanitizeInput =()=>{
     //ensure consecutive digits is not entered 
     let containNumber = parseInt(inputToSantize)
     if(!isNaN(containNumber)){
-        console.log("do not enter consecutive digits as input to this program")
+        console.log("good luck identifying the vowel equivalent of numerals")
         return
     }
     return inputToSantize.toUpperCase()
@@ -43,6 +43,10 @@ const isVowel = ()=>{
 
 const whaleTalkLogic = (arrayOfVowels)=>{
     let whaleTalkArray = []
+    if (arrayOfVowels.length <1) { //if no vowels in input
+        return "sorry , the text can't be converted to whale talk"
+
+    }
     for(let i =0; i<arrayOfVowels.length; i++){
         if(arrayOfVowels[i]==="U" || arrayOfVowels[i]==="E"){
             let WhaleChar= arrayOfVowels[i]+arrayOfVowels[i]
@@ -51,6 +55,7 @@ const whaleTalkLogic = (arrayOfVowels)=>{
         }
         whaleTalkArray.push(arrayOfVowels[i])
     }
+    
     console.log(whaleTalkArray)
     return whaleTalkArray.join('')
 }
