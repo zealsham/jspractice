@@ -33,6 +33,7 @@ let programAnswers=['It is certain',
     console.log(`you asked..... \n ${question}`)
     console.log("thinking .....")
     let value = Math.floor(Math.random() * (programAnswers.length-1 )) //picks a random value in the range of the array
+   //realize i could just do console.log(programAnsersw[value]), no need for the switch case at all
     switch(value){
         case 1:
             console.log(programAnswers[1])

@@ -47,13 +47,16 @@ let computerChoice= function(){
 }
 
 function gameLogic(computerGuess){
+    //computerGuess is a function , gave me lil headache when reading this code weeks later
+    
    let userChoice = checkUserInput()
    if(!userChoice){
        console.log("adhere to instructions")
        return 1
    }
   
-    let computerChoice = computerGuess()
+    let computerChoice = computerGuess() //head ache code
+
    console.log(`computer chosed ${computerChoice}`)
     if(userChoice===computerChoice){
         return "it was tie"
