@@ -43,7 +43,7 @@ const getSentenceCount=(wordArray)=>{
 
 const overUsedWordCount =(story,overUsed) =>{
     let words =story.split(" ")
-    console.log(words)
+    //console.log(words)
     
     let map ={}
     for(let i=0; i<words.length; i++){
@@ -54,9 +54,9 @@ const overUsedWordCount =(story,overUsed) =>{
         map[words[i]]=1
     }
     const prepare= ()=>{
-        console.log(map)
+        //console.log(map)
         for (let [key,value] of Object.entries(map)){
-            if(overUsed.indexOf(key > -1 )){
+            if(overUsed.indexOf(key )> -1 ){
                 console.log(key + " appeared "+ value +" times")
             }
         }
